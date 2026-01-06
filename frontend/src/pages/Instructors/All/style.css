@@ -1,0 +1,35 @@
+.description{
+    padding-bottom:-125px !important;
+}
+.card:hover .front{
+    transform: rotateY(180deg);
+}
+/* Card_Front_Part_Style:End */
+
+/* Card_Back_Part_Style:Start */
+.back{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    color: #FFF;
+
+    transform: rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: rotateY(360deg);
+}
+/* Card_Back_Part_Style:End */
+
+.front, .back{
+    transition: 1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+
+    background: #0E1C2C;
+}
